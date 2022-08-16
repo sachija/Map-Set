@@ -12,8 +12,8 @@
 // Output:
 // abcdef"
 
-let S = "abcadeecfb";
-let set2 = new Set(S);
+let String = "abcadeecfb";
+let set2 = new Set(String);
 console.log(set2.values());
 
 // "Problem:2
@@ -32,8 +32,9 @@ console.log(set2.values());
 const str = "abcadeecfb";
 const map1 = new Map();
 let count0 = 0;
-for(let i = 0; i < str.length; i++){
-   for(let j = 0; j < str.length; j++){
+let len= str.length
+for(let i = 0; i < len; i++){
+   for(let j = 0; j < len; j++){
         let a = str[i];
         if(a === str[j]){
             count0++;
